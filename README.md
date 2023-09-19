@@ -205,6 +205,80 @@ Valeur de référence : JavaScript fournit trois types de valeurs de référence
 
 ![](./gfgfgfgfgffg-660x415.png)
 
+##### Les Methods pour les Array en image :
+
+![](./method-arrays.png)
+![](./method-arrays-2.jpg)
+
+### Objets :
+
+- Les objets sont l'essence même de JavaScript !
+
+- Tout comme les tableaux, `objects` sont ce que nous appelons a `data structure` => une collection de valeurs.
+
+- Mais même si les tableaux sont une collection de valeurs **ordonnées** , les objets ne fonctionnent pas ainsi. Nous structurons les objets avec ce que nous appelons `key/value pairs`.
+
+```js
+const myObject = {
+  firstName: "Henrique",
+  age: 35,
+  isMarried: true,
+  hasChildren: true,
+};
+```
+
+Voici `firstName` une clé et `"Henrique"` la valeur connectée à `firstName`. Ils forment un `key-value pair`, et nous appelons cela un `property`.
+
+```js
+const myObject = {
+  username: "trigorin88", //string
+  downVotes: 19, //number
+  upVotes: 214, //number
+  netScore: 195, //number
+  commentText: "Tastes like chicken. lol !", //string
+  tags: ["#hillarious", "#funny", "#silly"], //array
+  isApproved: true, //boolean
+  imgSrc: {
+    thumbnail: "https://images.com/lnhj64225JG/200",
+    medium: "https://images.com/lnhj64225JG/600",
+    original: "https://images.com/lnhj64225JG/original",
+  }, // object
+};
+```
+
+##### Accéder aux propriétés des objets
+
+- Pour accéder aux propriétés des objets, nous pouvons utiliser deux méthodes : `brackers` ou `dot notation`;
+
+```js
+const user = {
+  firstName: "Henrique",
+  age: 35,
+  isMarried: true,
+  hasChildren: true,
+  children: [
+    {
+      firstName: "Eva",
+      age: 2,
+    },
+  ],
+};
+
+// I can acess the firstName like so :
+
+user["firstName"]; // Returns "Henrique" - Bracket method
+
+user.firstName; // Returns "Henrique" - Dot notation method
+
+// I can also chain things. Let's say I want to select the first element of the children array and select the age property :
+
+user.children[0].age; // Returns 2
+```
+
+> Une chose très importante à savoir sur la méthode des crochets : ce doit être une chaîne ! Si vous mettez user[firstName], sans guillemets, il recherchera une variable appelée firstName(ce qui peut être très utile parfois et c'est une chose que nous ne pouvons pas faire avec la notation par points).
+
+
+
 ### Loops (boucles) :
 
 ```js
