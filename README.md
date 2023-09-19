@@ -165,6 +165,46 @@ switch (true) {
 
 ![](./control-flow.png)
 
+### Array :
+
+```js
+// To make an empty array
+const students = [];
+
+// An array of strings
+const colors = ["orange", "red", "yellow"];
+
+// An array of numbers
+const lottoNumbers = [19, 22, 56, 12, 51];
+
+// A mixed array
+const stuff = [true, 68, "cat", null];
+
+const colors = ["orange", "red", "yellow"];
+
+colors[0]; // returns "orange"
+colors[1]; // returns "red"
+colors[2]; // returns "yellow"
+
+colors[3]; // returns undefined (it doesn't exist)
+
+//tableaux multidimensionnels 
+const myArray = [null, true, ["apple", "strawberry", "lemon", "banana"]];
+
+// You can access an element of the array inside the array as such :
+
+myArray[2][1]; // Returns "straweberry"
+```
+- Voir [ici la liste](https://www.programiz.com/javascript/library/array) de toutes les méthodes de tableau.
+
+- et [ici](http://js-review.widopanel.com/)
+
+##### Reference type or Reference Value
+
+Valeur de référence : JavaScript fournit trois types de valeurs de référence : Array, Object et Function . La taille d'une valeur de référence est dynamique donc elle est stockée sur Heap. Lorsque nous accédons à une valeur de référence, nous la manipulons via une référence, et non via sa valeur réelle stockée.
+
+![](./gfgfgfgfgffg-660x415.png)
+
 ### Loops (boucles) :
 
 ```js
