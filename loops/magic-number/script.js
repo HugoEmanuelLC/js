@@ -23,6 +23,10 @@ do {
         myNumber = prompt('find the number :-P')
         myNumber = parseInt(myNumber)
     }
+    while (Number.isNaN(myNumber) == true) {
+        myNumber = prompt('find the number :-P')
+        myNumber = parseInt(myNumber)
+    }
     if (myNumber > magicNumber ) {
         console.log("plus petit")
         alert("too big :-D")
