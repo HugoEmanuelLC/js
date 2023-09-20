@@ -8,7 +8,8 @@ console.log(numberMaximun);
 let magicNumber = Number;
 
 while (Number.isNaN(numberMaximun) == true) {
-    numberMaximun = prompt("when many numbers ?")
+    alert("you must only use numbers")
+    numberMaximun = prompt("you play with so many numbers ?")
     numberMaximun = parseInt(numberMaximun);
 }
 magicNumber = Math.floor(Math.random() * numberMaximun) + 1;
@@ -19,11 +20,8 @@ myNumber = parseInt(myNumber)
 let winer = false;
 
 do {
-    while (Number.isNaN(numberMaximun) == true) {
-        myNumber = prompt('find the number :-P')
-        myNumber = parseInt(myNumber)
-    }
     while (Number.isNaN(myNumber) == true) {
+        alert("you must only use numbers")
         myNumber = prompt('find the number :-P')
         myNumber = parseInt(myNumber)
     }
