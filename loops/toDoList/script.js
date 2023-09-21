@@ -29,7 +29,7 @@
 
 
 
-// alert("welcome to the game ! 8-D ")
+alert("welcome to the game ! 8-D ")
 let quit = false;
 let userChoice;
 let tabToDoList= []
@@ -78,32 +78,54 @@ do {
             break;
 
         case 'delete':
-            let idNbr = Number;
-            let element = "";
-            for (let i = 0; i < tabToDoList.length; i++) {
-                tampon = nbrItem + i;
-                element += ` \n ${tampon}. ${tabToDoList[i]} `;
-            }
-            idNbr = prompt(`
-                Indicate the element number to delete \n
-                ********* TODO LIST *********
-                ${element}
-            `)
-            
-            if (Boolean(tabToDoList.find(ele => {
-                return ele[idNbr]
-            }))){
-                tabToDoList.splice(idNbr, 1)
+            if (tabToDoList.length >= 1) {
+                let idNbr = Number;
+                let element = "";
+                let elementDeleted = "";
+                for (let i = 0; i < tabToDoList.length; i++) {
+                    tampon = nbrItem + i;
+                    element += ` \n ${tampon}. ${tabToDoList[i]} `;
+                }
+                idNbr = prompt(`
+                    Indicate the element number to delete
+                    ********* TODO LIST *********
+                    ${element}
+                `)
+                
+                if (Boolean(tabToDoList[idNbr -1])){
+                    elementDeleted = tabToDoList[idNbr -1]
+                    tabToDoList.splice(idNbr -1, 1)
+                    element = "";
+                    for (let i = 0; i < tabToDoList.length; i++) {
+                        tampon = nbrItem + i;
+                        element += `${tampon}. ${tabToDoList[i]} `;
+                    }
+                    alert(`
+                        item "${elementDeleted}" 
+                        removed from list: 
+                        ********* TODO LIST *********
+                        ${element}
+                    `)
+                    userChoice = prompt(`
+                        Chose your tasks:
+                            new: to add a todo
+                            list: to see all the todos
+                            delete: to remove a specific todo
+                            quit: to exit de program
+                    `);
+                }else{
+                    alert("element not found")
+                }
             }else{
-                alert("element not found")
+                alert("nothing to delete")
+                userChoice = prompt(`
+                    Chose your tasks:
+                        new: to add a todo
+                        list: to see all the todos
+                        delete: to remove a specific todo
+                        quit: to exit de program
+                `);
             }
-            userChoice = prompt(`
-                Chose your tasks:
-                    new: to add a todo
-                    list: to see all the todos
-                    delete: to remove a specific todo
-                    quit: to exit de program
-            `);
             break;
 
         case 'quit':
@@ -125,7 +147,3 @@ do {
 } while (quit == false);
 
 alert("Thank you and see you soon !!!")
-
-
-
-
