@@ -98,7 +98,7 @@ do {
                     element = "";
                     for (let i = 0; i < tabToDoList.length; i++) {
                         tampon = nbrItem + i;
-                        element += `${tampon}. ${tabToDoList[i]} `;
+                        element += ` \n ${tampon}. ${tabToDoList[i]} `;
                     }
                     alert(`
                         item "${elementDeleted}" 
