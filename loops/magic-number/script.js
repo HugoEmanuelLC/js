@@ -21,17 +21,25 @@ do {
         alert("you must only use numbers")
         myNumber = prompt('find the number :-P')
     }
-    if (myNumber > magicNumber ) {
-        console.log("plus petit")
-        alert("too big :-D")
-        myNumber = prompt('find the number :-P')
-    }else if(myNumber < magicNumber ) {
-        console.log("plus grand")
-        alert("too small :-\ ")
-        myNumber = prompt('find the number :-P')
+    if (numberMaximun >= 1) {
+        console.log(`numberMaximun ${numberMaximun}`);
+        if (myNumber > magicNumber ) {
+            console.log("plus petit")
+            alert("too big :-D")
+            myNumber = prompt('find the number :-P')
+        }else if(myNumber < magicNumber ) {
+            console.log("plus grand")
+            alert("too small :-\ ")
+            myNumber = prompt('find the number :-P')
+        }else{
+            winer = true
+            break
+        }
     }else{
-        winer = true
-        break
+        numberMaximun = prompt(`
+        il faut choisir seulement plus grand que 0 
+        give a numbers :
+        `);
     }
 } while (winer == false);
 

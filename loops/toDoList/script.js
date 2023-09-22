@@ -36,25 +36,20 @@ let tabToDoList= []
 let nbrItem = 1
 let tampon = 0;
 
-userChoice = prompt(`
-    Chose your tasks:
-        new: to add a todo
-        list: to see all the todos
-        delete: to remove a specific todo
-        quit: to exit de program
-`);
-
+let msg = `
+Chose your tasks:
+    new: to add a todo
+    list: to see all the todos
+    delete: to remove a specific todo
+    quit: to exit de program
+`;
+userChoice = prompt(msg).toLowerCase();
 do {
     switch (userChoice) {
         case 'new':
             tabToDoList.push(prompt(`you can add your item`))
-            userChoice = prompt(`
-                Chose your tasks:
-                    new: to add a todo
-                    list: to see all the todos
-                    delete: to remove a specific todo
-                    quit: to exit de program
-            `);
+            console.log(tabToDoList);
+            userChoice = prompt(msg).toLowerCase(); 
             break;
 
         case 'list':
@@ -68,13 +63,7 @@ do {
                 }
                 alert("********* TODO LIST *********"+element)
             }
-            userChoice = prompt(`
-                Chose your tasks:
-                    new: to add a todo
-                    list: to see all the todos
-                    delete: to remove a specific todo
-                    quit: to exit de program
-            `);
+            userChoice = prompt(msg).toLowerCase();
             break;
 
         case 'delete':
@@ -106,25 +95,16 @@ do {
                         ********* TODO LIST *********
                         ${element}
                     `)
-                    userChoice = prompt(`
-                        Chose your tasks:
-                            new: to add a todo
-                            list: to see all the todos
-                            delete: to remove a specific todo
-                            quit: to exit de program
-                    `);
+                    console.log(tabToDoList);
+                    
+            userChoice = prompt(msg).toLowerCase();
                 }else{
                     alert("element not found")
                 }
             }else{
                 alert("nothing to delete")
-                userChoice = prompt(`
-                    Chose your tasks:
-                        new: to add a todo
-                        list: to see all the todos
-                        delete: to remove a specific todo
-                        quit: to exit de program
-                `);
+                
+            userChoice = prompt(msg).toLowerCase();
             }
             break;
 
@@ -134,13 +114,8 @@ do {
 
         default:
             alert('Sorry, but, incorrect indication !!')
-            userChoice = prompt(`
-                Chose your tasks:
-                    new: to add a todo
-                    list: to see all the todos
-                    delete: to remove a specific todo
-                    quit: to exit de program
-            `);
+            
+            userChoice = prompt(msg).toLowerCase();
             break;
     }
     console.log(tabToDoList)
