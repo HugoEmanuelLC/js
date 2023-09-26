@@ -146,11 +146,94 @@
 
 
 
-//
-function returnDay(params) {
+//trouver le jour de la semaine
+// function returnDay(params) {
+//     let week= [
+//         { nr: 1, nom:"lundi"},
+//         { nr: 2, nom: "mardi"},
+//         { nr: 3, nom: "mercredi"},
+//         { nr: 4, nom: "jeudi"},
+//         { nr: 5, nom: "vendredi"},
+//         { nr: 6, nom: "samedi"},
+//         { nr: 7, nom: "dimanche"}
+//     ]
 
-    let week= []
+//     if (params < 1 || params > 7) {
+//         console.log(null);
+//     }else{
+//         week.find(elem => {
+//             if (params == elem.nr) {
+//                 return console.log(elem.nom);
+//             }
+//         })
+//     }
+// }
+// returnDay(2);
 
 
+
+
+
+
+
+
+//les fonctions d'ordre supérieur
+// const rollDie = function () {
+//     const roll = Math.floor(Math.random() * 6 + 1);
+//     console.log(roll);
+// };
+// function callTwice(fnct, nr = 2){
+//     if (nr >= 1) {
+//         for (let i = 1; i <= nr; i++) {
+//             fnct();
+//         }
+//     }
+// };
+// callTwice(rollDie);
+
+//TEST fonctions d'ordre supérieur
+// function sum(nbr1, nbr2) {
+//     return nbr1+nbr2
+// }
+// let sustraction = (nbr1) => nbr1*2;
+// let params = [1, 20];
+// let resultat = function() {
+//     for (let i = 0; i < params.length; i++) {
+//         console.log(sustraction(params[i]));
+//         console.log(sum(params[i], 10));
+//     }
+// }
+// resultat()
+
+
+
+
+
+
+//tester this dans un objets
+const user = {
+    fistName: "",
+    lasteName: "",
+    age: 21,
+    printAge() {return this.age},
+    aYearHasPast: function(nbr){
+        console.log(this.printAge() + nbr);
+    },
+    complete: function(){
+        console.log(`I am ${this.fistName} ${this.lasteName} and i ${this.age} years old`);
+    },
+    contexto(params) {
+        console.log(this);
+    }
 }
-returnDay(5);
+console.log(user.printAge());
+user.fistName = "hugo";
+user.lasteName = "clavinas";
+user.name = function name() {
+    console.log("my name is ")
+}
+user.name()
+console.log(user.printAge());
+user.aYearHasPast(2)
+user.complete()
+user.contexto()
