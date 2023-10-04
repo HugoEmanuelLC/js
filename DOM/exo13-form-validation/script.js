@@ -64,12 +64,10 @@ form.addEventListener('click', (e) => {
 
 
 
-// document.querySelector('.display_none')
-// .addEventListener('click', (e) => {
-//         // console.log(form.username.value.length);
-//         // minMaxValues()
-//         // verifEmail()
-// })
+document.querySelector('.display_none')
+.addEventListener('click', (e) => {
+        alert('Merci et bonne continuation !!')
+})
 
 
 // show the button submit
