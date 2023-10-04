@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form method="GET">
+    <p>What is your cat's name ?</p>
+    <input type="text" name="cat" />
+    <p>Tell me how old is he</p>
+    <input type="number" name="age" />
+    <br />
+    <label for="options">Options</label>
+    <select name="options" id="options">
+      <option value="visa">visa</option>
+      <option value="mastercard">mastercard</option>
+      <option value="giftcard">giftcard</option>
+    </select>
+    <button type="submit">Send</button>
+  </form>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

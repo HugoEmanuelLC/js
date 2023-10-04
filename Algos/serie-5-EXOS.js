@@ -109,38 +109,44 @@
 
 
 //serie-5 Advanced EXO 10  element.Object.keys(element).forEach(ele => console.log(ele))
-let scanAndFind = (tbObj, obj) => tbObj.forEach(element =>  Object.keys(element).forEach(ele => ele == Object.keys(obj) ? console.log(Object.values(obj)) : null))
+// let scanAndFind = (tbObj, obj) => tbObj.filter(item => { if(Object.getOwnPropertyNames(item)[1] == Object.getOwnPropertyNames(obj)){ let t = Object.getOwnPropertyNames(obj)
+// if(item[t[0]]==obj[t[0]]){
+//   console.log(item)
+// }
+// }})
 
-console.log(scanAndFind(
-    [
-      {
-        firstName: "Vito",
-        lastName: "Corleone",
-      },
-      {
-        firstName: "Jon",
-        lastName: "Snow",
-      },
-      {
-        firstName: "Harry",
-        lastName: "Potter",
-      },
-      {
-        firstName: "Michal",
-        lastName: "Corleone",
-      },
-    ],
-    {lastName: "Corleone",}
-));
+// let scanAndFind = (tbObj, obj) => tbObj.filter(item => 
+//   Object.getOwnPropertyNames(item)[1] == Object.getOwnPropertyNames(obj) ? 
+//   item[Object.getOwnPropertyNames(obj)[0]]==obj[Object.getOwnPropertyNames(obj)[0]] ? 
+//   console.log([item]) : '' : '')
 
-console.log(scanAndFind(
-    [
-      { fullName: "Roi Baudoin", id: 49762 },
-      { fullName: "Margareth Tatcher", id: 94357 },
-      { fullName: "Barack Obama", id: 76458 },
-      { fullName: "Emmanuel Macron", id: 10687 },
-      { fullName: "Charles de Gaulle", id: 67098 },
-      { fullName: "Boris Johnson", id: 16437 },
-    ],
-    { id: 10687 }
-));
+// scanAndFind([
+//   {
+//     firstName: "Vito",
+//     lastName: "Corleone",
+//   },
+//   {
+//     firstName: "Jon",
+//     lastName: "Snow",
+//   },
+//   {
+//     firstName: "Harry",
+//     lastName: "Potter",
+//   },
+//   {
+//     firstName: "Michal",
+//     lastName: "Corleone",
+//   },
+// ],{lastName:"Corleone"});
+
+// scanAndFind(
+//     [
+//       { fullName: "Roi Baudoin", id: 49762 },
+//       { fullName: "Margareth Tatcher", id: 94357 },
+//       { fullName: "Barack Obama", id: 76458 },
+//       { fullName: "Emmanuel Macron", id: 10687 },
+//       { fullName: "Charles de Gaulle", id: 67098 },
+//       { fullName: "Boris Johnson", id: 16437 },
+//     ],
+//     { id: 10687 }
+// );

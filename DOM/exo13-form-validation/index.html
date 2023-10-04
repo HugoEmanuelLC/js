@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1></h1>
+  <form method="GET" action="#">
+    <label for="username">Username :</label>
+    <br>
+    <input type="text" name="username" id="username" autocomplete="off" placeholder="Username" required>
+    <p class="msg msgUsr"></p>
+    
+    <label for="email">Email :</label>
+    <br>
+    <input type="email" name="email" id="email" autocomplete="off" placeholder="mail@mail.com" required>
+    <p class="msg msgEmail"></p>
+    
+    <label for="password">Password :</label>
+    <br>
+    <input type="password" name="password" id="password" autocomplete="off" placeholder="00000000" minlength="8" maxlength="15" required>
+    <p class="msg msgPswd"></p>
+
+    <label for="password_verif">Password de verification :</label>
+    <br>
+    <input type="" name="password_verif" id="password_verif" autocomplete="off" placeholder="00000000" minlength="8" maxlength="15" required>
+    <p class="msg msgPswdVerif"></p>
+    
+    <button class="display_none" type="submit">test</button>
+  </form>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
