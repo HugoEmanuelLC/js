@@ -38,6 +38,7 @@ h1,.message{
     padding: 15px 0;
 }
 .board{
+    margin: 0 60px;
     display: grid;
     grid-template-columns: repeat(3, 120px);
     grid-template-rows: repeat(3, 120px);
