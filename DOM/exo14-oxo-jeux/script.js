@@ -4,17 +4,18 @@ let message = document.querySelector('.message')
 let vs = document.querySelector('.vs')
 
 let X = "X"
-let X_player = ''
+let X_player = 'hg'
 let X_score = 0
 
 let O = "O"
-let O_player = ''
+let O_player = 'ar'
 let O_score = 0
 
 let winner = ''
 let signWinner = ''
 let gameEnd = false
 let choix = true
+let nbr=0 //conter les cellules 
 
 const winCombinations = [
         [0, 1, 2],
@@ -38,14 +39,21 @@ const winCombinationsDefault = [
 ];
 //je controlle les cellules avant insertion
 function cellControll(cell, XO) {
+        let get = false
         for (let a = 0; a < winCombinations.length; a++) {
                 for (let b = 0; b < winCombinations[a].length; b++) {
                         if (cell == winCombinations[a][b]) {
                                 winCombinations[a][b] = XO
+                                if (get==false) {
+                                        nbr++
+                                        get = true
+                                }
                         }else{}
                 }
                 verifGame(winCombinations[a])
         }
+        get = false
+        console.log(nbr);
 }
 //je cree le tableau de jeux
 function cell(nbr=9) {
@@ -70,21 +78,24 @@ function msg(player, sign) {
 }
 //je rajoute chaque 'X' ou 'O' dans la case cliqué
 const add = (e)=>{
-        if (choix == true) {
-                choix = false
-                msg(O_player, O)
-                if (e.target.innerText == '') {
-                        e.target.innerText = X
-                        cellControll(e.target.accessKey,X)
-                } else {}
-        } else {
-                choix = true
-                msg(X_player, X)
-                if (e.target.innerText == '') {
-                        e.target.innerText = O
-                        cellControll(e.target.accessKey,O)
-                } else {}
-        }
+        if (e.target.classList == 'cell') {
+                if (choix == true) {
+                        choix = false
+                        msg(O_player, O)
+                        if (e.target.innerText == '') {
+                                e.target.innerText = X
+                                cellControll(e.target.accessKey,X)
+                        } else {}
+                } else {
+                        choix = true
+                        msg(X_player, X)
+                        if (e.target.innerText == '') {
+                                e.target.innerText = O
+                                cellControll(e.target.accessKey,O)
+                        } else {}
+                }
+        } else {}
+        
 }
 //je verifie le croisement de lignes pour chaque joueur
 function verifGame(param=[]) {
@@ -108,7 +119,11 @@ function verifGame(param=[]) {
                 board.removeEventListener('click', add)
                 document.querySelector('img')
                 .setAttribute('src', './images/5a40fcf5-90d8-4cc0-b9db-8d10e8a03d14.gif')
-        }else{}
+        }else {
+                if (nbr==9) {
+                        board.removeEventListener('click', add)
+                }
+        }
 }
 //je cree le riset
 const reset = ()=>{
@@ -127,6 +142,7 @@ const reset = ()=>{
         msg(winner,signWinner)
         winner = ''
         signWinner = ''
+        nbr = 0
 }
 //je restaure le game
 function verifNamePlayers() {
