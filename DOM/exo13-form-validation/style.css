@@ -21,6 +21,9 @@ form{
 form label{
     color: rgb(212, 212, 212);
 }
+form input{
+    outline: none;
+}
 form input,
 form button{
     padding: 5px;

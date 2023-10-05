@@ -58,7 +58,7 @@ function verifEmail() {
                 msgEmail.innerText = `email not valide!`
         } 
 }
-form.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
         e.preventDefault()
 })
 
@@ -66,6 +66,12 @@ form.addEventListener('click', (e) => {
 
 document.querySelector('.display_none')
 .addEventListener('click', (e) => {
+        console.log({
+                user: form.username.value,
+                email: form.email.value,
+                paswr: form.password.value,
+                psw_verif: form.password_verif.value
+        });
         alert('Merci et bonne continuation !!')
 })
 
