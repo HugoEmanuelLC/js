@@ -4,11 +4,11 @@ let message = document.querySelector('.message')
 let vs = document.querySelector('.vs')
 
 let X = "X"
-let X_player = 'hg'
+let X_player = ''
 let X_score = 0
 
 let O = "O"
-let O_player = 'ar'
+let O_player = ''
 let O_score = 0
 
 let winner = ''
