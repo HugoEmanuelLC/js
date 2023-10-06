@@ -6,7 +6,6 @@ let vs = document.querySelector('.vs')
 let projet_oxo = document.querySelector('.projet_oxo')
 let mainImg = document.querySelector('.mainImg')
 let winImg = document.querySelector('.winImg')
-// let equalImg = document.querySelector('.equalImg')
 
 let X = "X"
 let X_player = ''
@@ -116,6 +115,7 @@ function verifGame(param=[]) {
                 vs.previousElementSibling.innerText = `${X_player} "${X}" - ${X_score}`
                 board.removeEventListener('click', add)
                 winImg.setAttribute('src', './images/5a40fcf5-90d8-4cc0-b9db-8d10e8a03d14.gif')
+                return
         }else if(param.every(ele => ele == O)) {
                 message.innerText = `${O_player} "${O}" is the winner !!!`
                 winner = O_player;
@@ -125,11 +125,14 @@ function verifGame(param=[]) {
                 vs.nextElementSibling.innerText = `${O_score} - "${O}" ${O_player}`
                 board.removeEventListener('click', add)
                 winImg.setAttribute('src', './images/5a40fcf5-90d8-4cc0-b9db-8d10e8a03d14.gif')
-        }else {
+                return
+        }else{
+                // console.log(gameEnd);
                 if (nbr==9) {
                         board.removeEventListener('click', add)
-                        message.innerText = `GAME equal !!!`
-                        // equalImg.setAttribute('src', './images/giphy.gif')
+                        if (gameEnd == false) {
+                                message.innerText = `GAME equal !!!`
+                        }
                 }
         }
 }
@@ -163,7 +166,6 @@ function verifNamePlayers() {
 
 
 //je commence le jeux
-// verifNamePlayers(winner, signWinner)
 cell()
 board.addEventListener('click', add)
 restart.addEventListener('click', reset)
