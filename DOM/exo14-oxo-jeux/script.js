@@ -123,6 +123,7 @@ function verifGame(param=[]) {
         }else {
                 if (nbr==9) {
                         board.removeEventListener('click', add)
+                        message.innerText = `match null !!`
                 }
         }
 }
