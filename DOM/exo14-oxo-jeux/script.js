@@ -106,7 +106,7 @@ function verifGame(param=[]) {
                 signWinner = X
                 gameEnd = true
                 X_score++
-                vs.previousElementSibling.innerText = `${X_player} ${X_score}`
+                vs.previousElementSibling.innerText = `${X_player} "${X}" - ${X_score}`
                 board.removeEventListener('click', add)
                 document.querySelector('img')
                 .setAttribute('src', './images/5a40fcf5-90d8-4cc0-b9db-8d10e8a03d14.gif')
@@ -116,7 +116,7 @@ function verifGame(param=[]) {
                 signWinner = O
                 gameEnd = true
                 O_score++
-                vs.nextElementSibling.innerText = `${O_player} ${O_score}`
+                vs.nextElementSibling.innerText = `${O_score} - "${O}" ${O_player}`
                 board.removeEventListener('click', add)
                 document.querySelector('img')
                 .setAttribute('src', './images/5a40fcf5-90d8-4cc0-b9db-8d10e8a03d14.gif')
