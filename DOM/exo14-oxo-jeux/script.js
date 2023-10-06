@@ -37,24 +37,6 @@ const winCombinationsDefault = [
         [0, 4, 8],
         [2, 4, 6],
 ];
-//je controlle les cellules avant insertion
-function cellControll(cell, XO) {
-        let get = false
-        for (let a = 0; a < winCombinations.length; a++) {
-                for (let b = 0; b < winCombinations[a].length; b++) {
-                        if (cell == winCombinations[a][b]) {
-                                winCombinations[a][b] = XO
-                                if (get==false) {
-                                        nbr++
-                                        get = true
-                                }
-                        }else{}
-                }
-                verifGame(winCombinations[a])
-        }
-        get = false
-        console.log(nbr);
-}
 //je cree le tableau de jeux
 function cell(nbr=9) {
         for (let i = 0; i < nbr; i++) {
@@ -75,24 +57,45 @@ function msg(player, sign) {
                         message.innerText = `${O_player} "${O}" it's your turn`
                 }
         } else {}
+}//je controlle les cellules avant insertion
+function cellControll(cell, XO) {
+        let get = false
+        for (let a = 0; a < winCombinations.length; a++) {
+                for (let b = 0; b < winCombinations[a].length; b++) {
+                        if (cell == winCombinations[a][b]) {
+                                console.log(cell == winCombinations[a][b]);
+                                winCombinations[a][b] = XO
+                                if (get==false) {
+                                        nbr++
+                                        get = true
+                                }
+                        }else{}
+                }
+                verifGame(winCombinations[a])
+        }
+        get = false
+        console.log(nbr);
 }
 //je rajoute chaque 'X' ou 'O' dans la case cliqué
 const add = (e)=>{
         if (e.target.classList == 'cell') {
-                if (choix == true) {
-                        choix = false
-                        msg(O_player, O)
-                        if (e.target.innerText == '') {
-                                e.target.innerText = X
-                                cellControll(e.target.accessKey,X)
-                        } else {}
+                if (e.target.innerText != '') { 
                 } else {
-                        choix = true
-                        msg(X_player, X)
-                        if (e.target.innerText == '') {
-                                e.target.innerText = O
-                                cellControll(e.target.accessKey,O)
-                        } else {}
+                        if (choix == true) {
+                                choix = false
+                                msg(O_player, O)
+                                if (e.target.innerText == '') {
+                                        e.target.innerText = X
+                                        cellControll(e.target.accessKey,X)
+                                } else {}
+                        } else {
+                                choix = true
+                                msg(X_player, X)
+                                if (e.target.innerText == '') {
+                                        e.target.innerText = O
+                                        cellControll(e.target.accessKey,O)
+                                } else {}
+                        }
                 }
         } else {}
         
