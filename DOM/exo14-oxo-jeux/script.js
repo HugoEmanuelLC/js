@@ -3,6 +3,11 @@ let restart = document.querySelector('.restart')
 let message = document.querySelector('.message')
 let vs = document.querySelector('.vs')
 
+let projet_oxo = document.querySelector('.projet_oxo')
+let mainImg = document.querySelector('.mainImg')
+let winImg = document.querySelector('.winImg')
+let equalImg = document.querySelector('.equalImg')
+
 let X = "X"
 let X_player = ''
 let X_score = 0
@@ -39,6 +44,8 @@ const winCombinationsDefault = [
 ];
 //je cree le tableau de jeux
 function cell(nbr=9) {
+        mainImg.setAttribute('src', './images/scribbles-and-ink-anim-fallback-mobile.gif')
+        projet_oxo.style.backgroundImage = "url('./images/scared-owl.gif')"
         for (let i = 0; i < nbr; i++) {
                 let div = document.createElement('div')
                 div.classList = 'cell'
@@ -108,8 +115,7 @@ function verifGame(param=[]) {
                 X_score++
                 vs.previousElementSibling.innerText = `${X_player} "${X}" - ${X_score}`
                 board.removeEventListener('click', add)
-                document.querySelector('img')
-                .setAttribute('src', './images/5a40fcf5-90d8-4cc0-b9db-8d10e8a03d14.gif')
+                winImg.setAttribute('src', './images/5a40fcf5-90d8-4cc0-b9db-8d10e8a03d14.gif')
         }else if(param.every(ele => ele == O)) {
                 message.innerText = `${O_player} "${O}" is the winner !!!`
                 winner = O_player;
@@ -118,20 +124,20 @@ function verifGame(param=[]) {
                 O_score++
                 vs.nextElementSibling.innerText = `${O_score} - "${O}" ${O_player}`
                 board.removeEventListener('click', add)
-                document.querySelector('img')
-                .setAttribute('src', './images/5a40fcf5-90d8-4cc0-b9db-8d10e8a03d14.gif')
+                winImg.setAttribute('src', './images/5a40fcf5-90d8-4cc0-b9db-8d10e8a03d14.gif')
         }else {
                 if (nbr==9) {
                         board.removeEventListener('click', add)
                         message.innerText = `GAME equal !!!`
+                        equalImg.setAttribute('src', './images/giphy.gif')
                 }
         }
 }
 //je cree le riset
 const reset = ()=>{
         board.addEventListener('click', add)
-        document.querySelector('img')
-        .removeAttribute('src')
+        winImg.removeAttribute('src')
+        equalImg.removeAttribute('src')
         gameEnd = false
         board.querySelectorAll('div').forEach(ele =>{
                 ele.innerText = ''
@@ -157,7 +163,7 @@ function verifNamePlayers() {
 
 
 //je commence le jeux
-verifNamePlayers(winner, signWinner)
+// verifNamePlayers(winner, signWinner)
 cell()
 board.addEventListener('click', add)
 restart.addEventListener('click', reset)
