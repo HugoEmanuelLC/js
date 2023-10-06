@@ -63,7 +63,6 @@ function cellControll(cell, XO) {
         for (let a = 0; a < winCombinations.length; a++) {
                 for (let b = 0; b < winCombinations[a].length; b++) {
                         if (cell == winCombinations[a][b]) {
-                                console.log(cell == winCombinations[a][b]);
                                 winCombinations[a][b] = XO
                                 if (get==false) {
                                         nbr++
@@ -74,7 +73,6 @@ function cellControll(cell, XO) {
                 verifGame(winCombinations[a])
         }
         get = false
-        console.log(nbr);
 }
 //je rajoute chaque 'X' ou 'O' dans la case cliqué
 const add = (e)=>{
