@@ -6,7 +6,7 @@ let vs = document.querySelector('.vs')
 let projet_oxo = document.querySelector('.projet_oxo')
 let mainImg = document.querySelector('.mainImg')
 let winImg = document.querySelector('.winImg')
-let equalImg = document.querySelector('.equalImg')
+// let equalImg = document.querySelector('.equalImg')
 
 let X = "X"
 let X_player = ''
@@ -129,7 +129,7 @@ function verifGame(param=[]) {
                 if (nbr==9) {
                         board.removeEventListener('click', add)
                         message.innerText = `GAME equal !!!`
-                        equalImg.setAttribute('src', './images/giphy.gif')
+                        // equalImg.setAttribute('src', './images/giphy.gif')
                 }
         }
 }
@@ -137,7 +137,7 @@ function verifGame(param=[]) {
 const reset = ()=>{
         board.addEventListener('click', add)
         winImg.removeAttribute('src')
-        equalImg.removeAttribute('src')
+        // equalImg.removeAttribute('src')
         gameEnd = false
         board.querySelectorAll('div').forEach(ele =>{
                 ele.innerText = ''
