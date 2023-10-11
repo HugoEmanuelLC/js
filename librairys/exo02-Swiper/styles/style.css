@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+}
+section{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.swiper-slide{
+    /* border: solid red 2px; */
+    display: flex;
+        align-items: center;
+    max-width: 100%;
+    height: 90vh;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-button-prev::after{
+    content: '';
+}
+.swiper-button-next::after{
+    content: '';
+}
+.swiper-button-prev img,
+.swiper-button-next img{
+    height: 50px;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    padding: 0 50px;
+}

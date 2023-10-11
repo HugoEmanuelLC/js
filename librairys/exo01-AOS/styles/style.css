@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+}
+main .container{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    height: 200vh;
+}
+section{
+    display: flex;
+        justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+section h2:first-child{
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+section h2:nth-child(2){
+    align-self: flex-end;
+}
+section h2:nth-child(3){
+    align-self: flex-end;
+}
+section h2:last-child(){
+    align-self: flex-end;
+}
