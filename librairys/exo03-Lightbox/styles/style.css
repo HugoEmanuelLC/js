@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    transition: 400ms;
+}
+main .container{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.grid{
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    overflow: hidden;
+}
+.grid img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.grid img:hover{
+    height: 120%;
+    width: 120%;
+}
+.grid .item{
+    max-height: 100%;
+    overflow: hidden;
+}
