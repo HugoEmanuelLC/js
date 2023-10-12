@@ -51,11 +51,8 @@ fetch('./dates.json', {
 
 setTimeout(() => {
     var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        // spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesProgress: true,
+        // loop: true,
+        slidesPerView: 3.4,
     });
     var swiper2 = new Swiper(".mySwiper2", {
         loop: true,
