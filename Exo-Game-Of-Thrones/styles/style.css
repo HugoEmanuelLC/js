@@ -32,6 +32,7 @@ main .container {
   height: 513px;
 }
 .bloc_gallery .swiper-wrapper {
+  transform: translate3d(0px, 0px, 0px) !important;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);

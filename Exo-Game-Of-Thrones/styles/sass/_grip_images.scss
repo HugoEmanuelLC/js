@@ -18,6 +18,7 @@ main .container{
     width: 513px;
     height: 513px;
     .swiper-wrapper{
+        transform: translate3d(0px, 0px, 0px)!important;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
