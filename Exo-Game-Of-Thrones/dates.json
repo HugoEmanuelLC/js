@@ -7,50 +7,50 @@
     },
     {
         "id": 1,
-        "name": "test2",
-        "familly": " familly ",
-        "description": "Lord Eddard Stark, also known as Ned Stark, was the head of House Stark, the Lord of Winterfell and Warden of the North, and later Hand of the King to King Robert I Baratheon. He was the older brother of Benjen, Lyanna and the younger brother of Brandon Stark."
+        "name": "jon Snow",
+        "familly": "house stark",
+        "description": "Jon Snow, born Aegon Targaryen, is the son of Lyanna Stark and Rhaegar Targaryen, the late Prince of Dragonstone. From infancy, Jon is presented as the bastard son of Lord Eddard Stark, Lyanna's brother, and raised alongside Eddard's lawful children at Winterfell. Jon's true parentage is kept secret from everyone, including Jon himself, in order to protect him from those that sought the complete annihilation of House Targaryen."
     },
     {
         "id": 2,
-        "name": "test3",
-        "familly": " familly ",
-        "description": "Lord Eddard Stark, also known as Ned Stark, was the head of House Stark, the Lord of Winterfell and Warden of the North, and later Hand of the King to King Robert I Baratheon. He was the older brother of Benjen, Lyanna and the younger brother of Brandon Stark."
+        "name": "Jaime Lannister",
+        "familly": "house Lannister",
+        "description": "Ser Jaime Lannister was the elder son of Lord Tywin Lannister, younger twin brother of Queen Cersei Lannister, and older brother of Tyrion Lannister. He was involved in an incestuous relationship with Cersei, and unknown to most, he was the biological father of her three bastard children, Joffrey, Myrcella, and Tommen, as well as her unborn child."
     },
     {
         "id": 3,
-        "name": "test4",
-        "familly": " familly ",
-        "description": "Lord Eddard Stark, also known as Ned Stark, was the head of House Stark, the Lord of Winterfell and Warden of the North, and later Hand of the King to King Robert I Baratheon. He was the older brother of Benjen, Lyanna and the younger brother of Brandon Stark."
+        "name": "tyrion lannister",
+        "familly": "house Lannister",
+        "description": "Lord Tyrion Lannister is the youngest child of Lord Tywin Lannister and younger brother of Cersei and Jaime Lannister. A dwarf, he uses his wit and intellect to overcome the prejudice he faces. He is the current Lord of Casterly Rock and Hand of the King to Brandon Stark."
     },
     {
         "id": 4,
-        "name": "test5",
-        "familly": " familly ",
-        "description": "Lord Eddard Stark, also known as Ned Stark, was the head of House Stark, the Lord of Winterfell and Warden of the North, and later Hand of the King to King Robert I Baratheon. He was the older brother of Benjen, Lyanna and the younger brother of Brandon Stark."
+        "name": "cersei lannister",
+        "familly": "house Lannister",
+        "description": "Queen Cersei I Lannister was the twentieth ruler of the Seven Kingdoms and the widow of King Robert Baratheon. She was the daughter of Lord Tywin Lannister, twin sister of Jaime Lannister and elder sister of Tyrion Lannister. She was involved in an incestuous relationship with Jaime, who was secretly the father of her three bastard children, Joffrey, Myrcella and Tommen."
     },
     {
         "id": 5,
-        "name": "test6",
-        "familly": " familly ",
-        "description": "Lord Eddard Stark, also known as Ned Stark, was the head of House Stark, the Lord of Winterfell and Warden of the North, and later Hand of the King to King Robert I Baratheon. He was the older brother of Benjen, Lyanna and the younger brother of Brandon Stark."
+        "name": "joffrey baratheon",
+        "familly": "house Lannister",
+        "description": "King Joffrey I Baratheon was the eighteenth king to rule from the Iron Throne and the second king of the Baratheon dynasty. Though believed by most to be the eldest son of King Robert Baratheon and Queen Cersei Lannister, Joffrey is actually a bastard born from Cersei's incestuous relationship with her twin brother Jaime Lannister. He is the older brother of Myrcella and Tommen Baratheon."
     },
     {
         "id": 6,
-        "name": "test7",
-        "familly": " familly ",
-        "description": "Lord Eddard Stark, also known as Ned Stark, was the head of House Stark, the Lord of Winterfell and Warden of the North, and later Hand of the King to King Robert I Baratheon. He was the older brother of Benjen, Lyanna and the younger brother of Brandon Stark."
+        "name": "daenerys targaryen",
+        "familly": "house Targaryen",
+        "description": "\"I spent my life in foreign lands. So many men have tried to kill me, I don't remember all their names. I have been sold like a broodmare. I've been chained and betrayed, raped and defiled. Do you know what kept me standing through all those years in exile? Faith. Not in any gods. Not in myths and legends. In myself. In Daenerys Targaryen. The world hadn't seen a dragon in centuries until my children were born. The Dothraki hadn't crossed the sea. Any sea. They did for me. I was born to rule the Seven Kingdoms, and I will.\" Daenerys Targaryen to Jon Snow"
     },
     {
         "id": 7,
-        "name": "test8",
-        "familly": " familly ",
-        "description": "Lord Eddard Stark, also known as Ned Stark, was the head of House Stark, the Lord of Winterfell and Warden of the North, and later Hand of the King to King Robert I Baratheon. He was the older brother of Benjen, Lyanna and the younger brother of Brandon Stark."
+        "name": "Arya Stark",
+        "familly": "house stark",
+        "description": "Arya Stark is the third child and second daughter of Lord Eddard Stark and his wife, Lady Catelyn Stark. She is the sister of the incumbent Westerosi monarchs, Sansa, Queen in the North, and Brandon, King of the Andals and the First Men."
     },
     {
         "id": 8,
-        "name": "test9",
-        "familly": " familly ",
-        "description": "Lord Eddard Stark, also known as Ned Stark, was the head of House Stark, the Lord of Winterfell and Warden of the North, and later Hand of the King to King Robert I Baratheon. He was the older brother of Benjen, Lyanna and the younger brother of Brandon Stark."
+        "name": "sansa stark",
+        "familly": "house stark",
+        "description": "Queen Sansa Stark is the eldest daughter of Lord Eddard Stark and his wife, Lady Catelyn, sister of Robb, Arya, Bran, and Rickon Stark, and \"half-sister\" of Jon Snow; though truthfully is his cousin."
     }
 ]

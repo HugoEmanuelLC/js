@@ -9,11 +9,11 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  color: #FFFFFF;
 }
 
 main .container {
+  background-color: #0C1015;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,6 +70,7 @@ main .container {
 }
 
 .bloc_text {
+  width: 513px;
   box-sizing: border-box;
   background-color: #24292F;
   display: flex;
@@ -83,7 +84,9 @@ main .container {
 }
 .bloc_text h3 {
   font-size: 18px;
-  color: red;
+  color: #C92B2B;
+  margin: 20px 0;
+  text-transform: uppercase;
 }
 .bloc_text p {
   font-size: 14px;
@@ -96,5 +99,5 @@ main .container {
   width: 500px;
 }
 .bloc_text .swiper-wrapper .swiper-slide {
-  padding: 20px;
+  padding: 40px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,11 +1,5 @@
 
-
-
-
-
-
-
-// let target ;
+//creation des images
 let bloc_gallery = document.querySelector('.bloc_gallery .swiper-wrapper')
 for (let i = 0; i < 9; i++) {
     let bloc_img = document.createElement('div')
@@ -20,9 +14,11 @@ for (let i = 0; i < 9; i++) {
     bloc_gallery.append(bloc_img)
 }
 
-// let bloc_txt = document.querySelector('.bloc_text')
+
+
+
+//creation des texts de chaque image
 let swiper_wrapper = document.querySelector('.bloc_text .swiper-wrapper')
-// console.log(swiper_wrapper);
 fetch('./dates.json', {
     method: 'GET',
     headers: {
@@ -31,9 +27,7 @@ fetch('./dates.json', {
 })
 .then(response => response.json())
 .then(datas => {
-    // console.log(datas);
     datas.forEach(element => {
-        // console.log(element.name);
         let div = document.createElement('div')
         let h2 = document.createElement('h2')
         let h3 = document.createElement('h3')
@@ -46,7 +40,6 @@ fetch('./dates.json', {
         p.innerText = element.description
 
         div.append(h2,h3,p)
-        // console.log(div);
         swiper_wrapper.appendChild(div)
     });
 })
@@ -75,41 +68,4 @@ setTimeout(() => {
             swiper: swiper,
         },
     });
-    // target = document.querySelector('.swiper-slide-thumb-active')
-    // if (target) {
-    //     console.log('existe');
-    //     target.querySelector('.div_float').style.opacity = '0'
-    // } else {
-    //     console.log('nooooo')
-    // }
 }, 500);
-
-
-
-
-
-
-
-document.addEventListener('click', (e) => {
-    setTimeout(() => {
-
-        // document.querySelector('.swiper-slide-next .div_float').style.opacity = 0.75
-        // document.querySelector('.swiper-slide-thumb-active .div_float').style.opacity = 0
-        // document.querySelector('.swiper-slide-pres .div_float').style.opacity = 0.75
-
-        // document.querySelectorAll('.div_float').forEach(ele => {
-        //     console.log(ele.style.opacity === '0');
-        //     if (ele.style.opacity === '0') {
-                
-        //     } else {
-                
-        //     }
-        // })
-        
-        // if () {
-        //     document.querySelector('.swiper-slide-thumb-active .div_float').style.opacity = '0'
-        // } else {
-        //     document.querySelector('.div_float')
-        // }
-    }, 200);
-} )

@@ -1,6 +1,6 @@
 main .container{
+    background-color: #0C1015;
     display: flex;
-        // flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     min-height: 100vh;
@@ -14,27 +14,19 @@ main .container{
 }
 
 .bloc_gallery .swiper-wrapper{
-    // background-color: yellow;
-    // border: solid 2px red;
-    // height: 500px;
-    // width: 500px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 30px;
 
     .swiper-slide{
-        // background-color: blue;
         min-width: 151px;
     }
     .bloc_img{
-        // border: solid 2px red;
         position: relative;
         display: flex;
         overflow: hidden;
-        // min-width: 151px;
         img{
-            // border: solid 2px red;
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -63,7 +55,7 @@ main .container{
     }
 }
 .bloc_text{
-    // border: solid red 2px;
+    width: 513px;
     box-sizing: border-box;
     background-color: #24292F;
     display: flex;
@@ -76,7 +68,9 @@ main .container{
     }
     h3{
         font-size: 18px;
-        color: red;
+        color: #C92B2B;
+        margin: 20px 0;
+        text-transform: uppercase;
     }
     p{
         font-size: 14px;
@@ -85,82 +79,10 @@ main .container{
     }
 }
 .bloc_text .swiper-wrapper{
-    // border: solid blue 2px;
     height: 500px;
     width: 500px;
     .swiper-slide{
-        // border: solid red 2px;
-        padding: 20px;
+        padding: 40px;
     }
 }
 
-
-
-// .bloc_gallery{
-//     min-width: 513px;
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-template-rows: repeat(3, 1fr);
-//     gap: 30px;
-//     .bloc_img{
-//         position: relative;
-//         display: flex;
-//         overflow: hidden;
-//         // min-width: 151px;
-//         img{
-//             height: 100%;
-//             width: 100%;
-//             object-fit: cover;
-//         }
-//         .div_float{
-//             position: absolute;
-//                 top: 0;
-//                 left: 0;
-//                 width: 100%;
-//                 height: 100%;
-//             background-color: rgb(0, 0, 0);
-//             opacity: 0.75;
-//             cursor: pointer;
-//             &:hover ~ img{
-//                 height: 120%;
-//                 width: 120%;
-//                 object-fit: cover;
-//             }
-//             &:hover{
-//                 background-color: rgb(0, 0, 0, 0);
-//             }
-//         }
-//     }
-// }
-
-
-// .bloc_txt{
-//     width: 543px;
-//     height: 513px;
-//     background-color: #24292F;
-//     border: solid blue 4px;
-// }
-// .swiper-slide{
-//     height: 100px;
-//     width: 100px;
-//     background-color: #24292F;
-//     border: solid green 4px;
-// }
-
-
-// // .swiper-button-prev::after{
-// //     content: '';
-// // }
-// // .swiper-button-next::after{
-// //     content: '';
-// // }
-// // .swiper-button-prev img,
-// // .swiper-button-next img{
-// //     height: 50px;
-// // }
-// .swiper-button-prev,
-// .swiper-button-next{
-//     // padding: 0 50px;
-//     display: block;
-//     border: solid red 5px;
-// }
