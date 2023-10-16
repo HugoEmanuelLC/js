@@ -670,28 +670,28 @@ footer .Copyright {
   z-index: -1;
 }
 .comments_clients .gallery_comments .swiper-slide:nth-child(1) .profil {
-  background-image: url("../../images/comments-clients/unsplash_3TLl_97HNJo.png");
+  background-image: url("../images/comments-clients/unsplash_3TLl_97HNJo.png");
 }
 .comments_clients .gallery_comments .swiper-slide:nth-child(2) .profil {
-  background-image: url("../../images/comments-clients/unsplash_et_78QkMMQs.png");
+  background-image: url("../images/comments-clients/unsplash_et_78QkMMQs.png");
 }
 .comments_clients .gallery_comments .swiper-slide:nth-child(3) .profil {
-  background-image: url("../../images/comments-clients/unsplash_6anudmpILw4.png");
+  background-image: url("../images/comments-clients/unsplash_6anudmpILw4.png");
 }
 .comments_clients .gallery_comments .swiper-slide:nth-child(4) .profil {
-  background-image: url("../../images/comments-clients/unsplash_W7b3eDUb_2I.png");
+  background-image: url("../images/comments-clients/unsplash_W7b3eDUb_2I.png");
 }
 .comments_clients .gallery_comments .swiper-slide:nth-child(5) .profil {
-  background-image: url("../../images/comments-clients/unsplash_OhKElOkQ3RE.png");
+  background-image: url("../images/comments-clients/unsplash_OhKElOkQ3RE.png");
 }
 .comments_clients .gallery_comments .swiper-slide:nth-child(6) .profil {
-  background-image: url("../../images/comments-clients/unsplash_d1UPkiFd04A.png");
+  background-image: url("../images/comments-clients/unsplash_d1UPkiFd04A.png");
 }
 .comments_clients .gallery_comments .swiper-slide:nth-child(7) .profil {
-  background-image: url("../../images/comments-clients/unsplash_mEZ3PoFGs_k.png");
+  background-image: url("../images/comments-clients/unsplash_mEZ3PoFGs_k.png");
 }
 .comments_clients .gallery_comments .swiper-slide:nth-child(8) .profil {
-  background-image: url("../../images/comments-clients/unsplash_O3ymvT7Wf9U.png");
+  background-image: url("../images/comments-clients/unsplash_O3ymvT7Wf9U.png");
 }
 .comments_clients .bloc_imgs {
   overflow: visible;
@@ -704,7 +704,7 @@ footer .Copyright {
   }
 }
 .comments_clients .bloc_imgs .swiper-wrapper {
-  background-image: url("../../images/comments-clients/bloc-imgs/Ellipse-93.svg");
+  background-image: url("../images/comments-clients/bloc-imgs/Ellipse-93.svg");
   background-repeat: no-repeat;
   background-position: left;
   transform: translate3d(0px, 0px, 0px) !important;
@@ -837,7 +837,7 @@ footer .Copyright {
 
 .subscribe {
   position: relative;
-  background-image: url("../../images/subscribe/Rectangle-30.png");
+  background-image: url("../images/subscribe/Rectangle-30.png");
   height: 292px;
   padding-left: 70px;
   display: flex;
