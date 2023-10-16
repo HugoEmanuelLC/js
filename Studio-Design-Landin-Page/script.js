@@ -64,5 +64,5 @@ var comments = new Swiper(".blocs .gallery_comments", {
     // BIBLIOTHEQUE AOS ANIMATION "data-aos"
     AOS.init({
         duration: 1500,
-        delay: 600,
+        delay: 400,
     });
