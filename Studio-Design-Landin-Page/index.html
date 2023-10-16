@@ -1,29 +1,363 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://db.onlinewebfonts.com/c/f036e81e6040acc6b43aabc036862d21?family=Averta" rel="stylesheet"
+        type="text/css" />
+    <!--BIBLIOTHEQUE AOS ANIMATION SCROLL-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Landing Page - Studio</title>
 </head>
+
 <body>
-    <header>
-        <div class="container"></div>
-    </header>
+    <div id="page">
+        <!-- fini à 11:46 13/10/2023 -->
+        <header>
+            <div class="container">
+                <div data-aos="fade-right" class="logo">
+                    <a href="#home"><span>A</span>+ Studio</a>
+                </div>
+                <nav>
+                    <input type="checkbox" name="bar" id="bar">
+                    <label class="bar" for="bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul data-aos="fade-left">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#whatwedo">what we do</a></li>
+                        <li><a href="#service">service</a></li>
+                        <li><a href="#project">project</a></li>
+                        <li><a href="#blog">blog</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        <div class="container">
-            <ul>
-                <li>lorem3</li>
-                <li>lorem3</li>
-                <li>lorem3</li>
-            </ul>
-        </div>
-    </main>
+        <main>
+            <div class="container ">
+                <section class="section_presentation">
+                    <div class="presentation">
+                        <h1 data-aos="zoom-in">A Digital Product Agency</h1>
+                        <p data-aos="zoom-in">Leading digital agency with solid design and development expertise. 
+                            We build readymade websites, mobile applications, and elaborate online 
+                            business services.</p>
+                        <a data-aos="zoom-in" href="#contact">contact now</a>
+                    </div>
+                    <div class="presentation">
+                        <img data-aos="zoom-in" class="img_deco img_deco_1" src="./images/Ellipse-85.svg" alt="decorative" srcset="">
+                        <img data-aos="zoom-in" class="img_deco img_deco_2" src="./images/Rectangle-23.svg" alt="decorative" srcset="">
+                        <img data-aos="zoom-in" class="img_presentation" src="./images/image-8.png" alt="presentation" srcset="">
+                    </div>
+                </section>
 
-    <footer>
-        <div class="container"></div>
-    </footer>
+                <section data-aos="zoom-in" class="slider_clients">
+                    <div class="text">
+                        <h2>Our Client</h2>
+                        <p>Several selected clients,
+                            who already believe in our service.</p>
+                    </div>
+
+                    <div class="swiper slides">
+                        <div class="swiper-wrapper"></div>
+                    </div>
+                </section>
+
+                <section class="help_business">
+                    <div class="text">
+                        <h2 data-aos="zoom-in">How can we help your Business ?</h2>
+                        <p data-aos="zoom-in">We build readymade websites, mobile applications, and elaborate online business services.</p>
+                        
+                    </div> 
+                    <div class="deco_imgs">
+                        <img src="./images/help-business/Dot.svg" alt="">
+                        <img src="./images/help-business/Dot.svg" alt="">
+                    </div>
+
+                    <div class="gallery">
+                        <div class="blocs blocs1">
+                            <div class="bloc bloc1">
+                                <div class="bloc_img">
+                                    <img data-aos="fade-right" src="./images/help-business/gallery/box-search-1.svg" alt="">
+                                </div>
+                                <h4 data-aos="fade-right" >Business Idea Planning</h4>
+                                <p data-aos="fade-right" >We present you a proposal and discuss niffty-gritty like</p>
+                            </div>
+                            <div class="bloc bloc2">
+                                <div class="bloc_img">
+                                    <img data-aos="fade-right" src="./images/help-business/gallery/code-1-1.svg" alt="">
+                                </div>
+                                <h4 data-aos="fade-right" >Development Website and App</h4>
+                                <p data-aos="fade-right" >Communication protocols apart from engagement models</p>
+                            </div>
+                        </div>
+
+                        <div class="blocs blocs2">
+                            <div class="bloc bloc1">
+                                <div class="bloc_img">
+                                    <img data-aos="fade-left" src="./images/help-business/gallery/empty-wallet-1.svg" alt="">
+                                </div>
+                                <h4 data-aos="fade-left">Financial Planning System</h4>
+                                <p data-aos="fade-left">Protocols apart from aengage models, pricing billing</p>
+                            </div>
+                            <div class="bloc bloc2">
+                                <div class="bloc_img">
+                                    <img data-aos="fade-left" src="./images/help-business/gallery/chart-square-1.svg" alt="">
+                                </div>
+                                <h4 data-aos="fade-left">Market Analysis Project</h4>
+                                <p data-aos="fade-left">Protocols apart from aengage models, pricing billing</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section data-aos="fade-right" class="video">
+                    <div class="items">
+                        <img src="./images/video-pub/Ellipse-86.svg" alt="">
+                        <iframe src="https://www.youtube.com/embed/zZMYxhSBsx4?si=PxYM5Lovh9_TvmzS" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="items description">
+                        <img src="./images/video-pub/Rectangle-26.svg" alt="">
+                        <h3>Great Digital Product Agency since 2016</h3>
+                        <p>Our Business Plan is a written document describing a company's core business activites, 
+                            Objectives, and how it plans to achieve its goals. 
+                            Our goal is to provide our client high quality Product with modern idea accordingly 
+                            their budgets and according thir reuirements.</p>
+                    </div>
+                </section>
+
+                <section class="comments_clients">
+                    <h3>What our happy client say</h3>
+                    <p>Several selected clients, who already believe in our service.</p>
+                    <div class="blocs">
+                        <div data-aos="zoom-in-up" class="gallery_comments swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item_img">
+                                        <div class="profil">
+                                            <img class="deco_2" src="./images/comments-clients/Dot.svg">
+                                            <img class="deco_1" src="./images/comments-clients/Ellipse-94.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Title name</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, mollitia.</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item_img">
+                                        <div class="profil">
+                                            <img class="deco_2" src="./images/comments-clients/Dot.svg">
+                                            <img class="deco_1" src="./images/comments-clients/Ellipse-94.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Title name</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, mollitia.</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item_img">
+                                        <div class="profil">
+                                            <img class="deco_2" src="./images/comments-clients/Dot.svg">
+                                            <img class="deco_1" src="./images/comments-clients/Ellipse-94.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Title name</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, mollitia.</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item_img">
+                                        <div class="profil">
+                                            <img class="deco_2" src="./images/comments-clients/Dot.svg">
+                                            <img class="deco_1" src="./images/comments-clients/Ellipse-94.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Title name</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, mollitia.</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item_img">
+                                        <div class="profil">
+                                            <img class="deco_2" src="./images/comments-clients/Dot.svg">
+                                            <img class="deco_1" src="./images/comments-clients/Ellipse-94.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Title name</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, mollitia.</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item_img">
+                                        <div class="profil">
+                                            <img class="deco_2" src="./images/comments-clients/Dot.svg">
+                                            <img class="deco_1" src="./images/comments-clients/Ellipse-94.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Title name</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, mollitia.</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item_img">
+                                        <div class="profil">
+                                            <img class="deco_2" src="./images/comments-clients/Dot.svg">
+                                            <img class="deco_1" src="./images/comments-clients/Ellipse-94.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Title name</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, mollitia.</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item_img">
+                                        <div class="profil">
+                                            <img class="deco_2" src="./images/comments-clients/Dot.svg">
+                                            <img class="deco_1" src="./images/comments-clients/Ellipse-94.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Title name</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, mollitia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div data-aos="zoom-in-up" class="bloc_imgs swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/comments-clients/bloc-imgs/unsplash_3TLl_97HNJo.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/comments-clients/bloc-imgs/unsplash_et_78QkMMQs.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/comments-clients/bloc-imgs/unsplash_6anudmpILw4.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/comments-clients/bloc-imgs/unsplash_W7b3eDUb_2I.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/comments-clients/bloc-imgs/unsplash_OhKElOkQ3RE.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/comments-clients/bloc-imgs/unsplash_d1UPkiFd04A.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/comments-clients/bloc-imgs/unsplash_mEZ3PoFGs_k.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/comments-clients/bloc-imgs/unsplash_O3ymvT7Wf9U.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="subscribe">
+                    <img class="deco_1" src="./images/subscribe/Rectangle-32.svg" alt="">
+                    <div class="text">
+                        <h3 data-aos="fade-right" >Subscribe Newsletter</h3>
+                        <p data-aos="fade-right" >I will update good news and promotion service not spam</p>
+                    </div>
+                    <form action="#">
+                        <div data-aos="fade-right"  class="item_form">
+                            <input type="email" name="" id="" placeholder="Enter your email address..">
+                            <button>Contact Now</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div data-aos="zoom-in-right" class="container">
+                <div class="bloc_main">
+                    <div class="bloc_logo">
+                        <div class="logo">
+                            <a href="#home"><span>A</span>+ Studio</a>
+                        </div>
+                        <p>Leading digital agency with solid design and development expertise. 
+                            We build readymade websites, mobile applications, and elaborate online business services.</p>
+                    </div>
+    
+                    <div class="main_footer">
+                        <div class="bloc_ul">
+                            <ul>
+                                <li><h4>What We Do</h4></li>
+                                <li>web design</li>
+                                <li>app design</li>
+                                <li>social media manage</li>
+                                <li>market analysis project</li>
+                            </ul>
+                        </div>
+                        <div class="bloc_ul">
+                            <ul>
+                                <li><h4>Company</h4></li>
+                                <li>about us</li>
+                                <li>career</li>
+                                <li>become investor</li>
+                            </ul>
+                        </div>
+                        <div class="bloc_ul">
+                            <ul>
+                                <li><h4>Support</h4></li>
+                                <li>FAQ</li>
+                                <li>policy</li>
+                                <li>business</li>
+                            </ul>
+                        </div>
+                        <div class="bloc_ul">
+                            <ul>
+                                <li><h4>Contact</h4></li>
+                                <li>whatsApp</li>
+                                <li>support 24</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <img src="./images/social/facebook.svg" alt="">
+                    <img src="./images/social/twitter.svg" alt="">
+                    <img src="./images/social/linkedin.svg" alt="">
+                </div>
+                <span class="undeline"></span>
+                <p class="Copyright">Copyright © 2022 Avi Yansah</p>
+            </div>
+        </footer>
+    </div>
+
+    <!--BIBLIOTHEQUE AOS ANIMATION SCROLL-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,50 @@
+.slider_clients{
+    margin: 200px 0 ;
+    overflow-x: hidden;
+    @include Dfx-Jsb-Ac;
+    .text{
+        // @include borderTest(blue);
+        width: 30%;
+        padding-right: 20px;
+        @include phone{
+            width: 70%;
+        }
+        h2{
+            font-size: 40px;
+            margin-bottom: 17px;
+            @include ipad_max{
+                font-size: 1.8rem;
+            }
+        }
+        p{
+            font-size: 18px;
+            line-height: 28.8px;
+            @include ipad_max{
+                font-size: 14px;
+            }
+        }
+    }
+    @include phone{
+        flex-direction: column;
+    }
+    .swiper{
+        // @include borderTest(red);
+        @include phone{
+            margin-top: 30px;
+        }
+        width: 70%;
+        .swiper-wrapper{
+            // @include borderTest(green);
+            @include Dfx-Ac;
+            .swiper-slide{
+                // @include borderTest(blue);
+                text-align: center;
+                min-width: 70px;
+                max-width: 151px;
+            }
+        }
+    }
+    img{
+        max-width:100%;
+    }
+}

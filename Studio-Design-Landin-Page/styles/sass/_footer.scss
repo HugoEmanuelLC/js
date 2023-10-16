@@ -1,0 +1,56 @@
+footer {
+    .bloc_main{
+        @include Dfx-Jsb-Ac;
+        padding: 100px 0;
+        .bloc_logo{
+            flex: 1;
+            align-self: self-start;
+        }
+        .logo{
+            padding: 0 0 24px;
+        }
+        .main_footer{
+            flex: 3;
+            display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+            @include ipad_max{
+                flex: 2;
+            }
+            @include phone{
+                flex: 1;
+            }
+            .bloc_ul{
+                display: flex;
+                justify-content: flex-end;
+                margin-left: 5vw;
+                @include ipad_max{
+                    width: 40%;
+                    justify-content: flex-start;
+                }
+                @include phone{
+                    width: 100%;
+                    justify-content: flex-start;
+                }
+            }
+            ul{
+                li{
+                    padding: 0 0 10px;
+                }
+                li:first-child{
+                    padding: 0 0 24px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .social img{
+        margin-right: 16px;
+        cursor: pointer;
+    }
+    .Copyright{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}

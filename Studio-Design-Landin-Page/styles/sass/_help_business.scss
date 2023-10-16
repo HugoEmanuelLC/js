@@ -1,0 +1,133 @@
+.help_business{
+    // @include borderTest(purple);
+    position: relative;
+    margin: 350px 0 200px;
+    height: 600px;
+    @include ipad_max{
+        margin: 550px 0 200px;
+    }
+
+
+    .text{
+        // @include borderTest(green);
+        max-width: 450px;
+        position: absolute;
+            z-index: +1;
+        @include ipad_pro{
+            top: 150px;
+        }
+        @include ipad_max{
+            top: -400px;
+        }
+        h2{
+            width: 80%;
+            font-size: 40px;
+            @include phone{
+                width: 100%;
+                font-size: 30px;
+            }
+            margin-bottom: 30px;
+        }
+    }
+
+
+    
+    .deco_imgs{
+        // @include borderTest(black);
+        position: absolute;
+            bottom: -35px;
+        min-width: 392px;
+        @include phone{
+            width: 100%;
+            min-width: 100%;
+            overflow-x: hidden;
+        }
+        display: flex;
+        img{
+            margin-left: 12px;
+            @include phone{
+                max-width: 100%;
+            }
+        }
+    }
+
+
+    .gallery{
+        // @include borderTest(blue);
+        background-image: url('../images/help-business/Rectangle-24.svg');
+        background-position: top left;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 600px;
+            top: 0;
+        max-width: 100%;
+        @include ipad{
+            right: -120px;
+            width: 70vw;
+        };
+        @include ipad_max{
+            right: -60px;
+            width: 90vw;
+        };
+        @include phone{
+            right: 0;
+        }
+        @include Dfx-Jc-Ac;
+        gap: 30px;
+        @include phone{
+            gap: 15px;
+        }
+        .blocs{
+            // @include borderTest(gray);
+            display: flex;
+                flex-direction: column;
+                gap: 30px;
+            @include phone{
+                gap: 15px;
+            }
+        }
+        .bloc{
+            box-shadow: 4px 4px 20px $txt_color_2;
+            background-color: $bg_color_2;
+            @include Dfx-Jc-Ac;
+                flex-direction: column;
+            text-align: center;
+            padding: 4vh 1.5vw;
+            border-radius: 40px;
+            @include phone{
+                width: 40vw;
+            }
+            max-width: 300px;
+
+            h4{
+                line-height: 30px;
+                font-size: 24px;
+                margin: 31px 0 27px;
+            }
+            p{
+                line-height: 22.4px;
+            }
+        }
+        .bloc_img{
+            padding: 24px;
+            border-radius: 20px;
+        }
+        .blocs1{
+            .bloc1 .bloc_img{
+            background-color: #F1F7FF;
+            }
+            .bloc2 .bloc_img{
+                background-color: #FFF2F8;
+            }
+        } 
+        .blocs2{
+            margin-top: -170px;
+            .bloc1 .bloc_img{
+            background-color: #FFF7E3;
+            }
+            .bloc2 .bloc_img{
+                background-color: #FFF7E3;
+            }
+        } 
+    }
+}

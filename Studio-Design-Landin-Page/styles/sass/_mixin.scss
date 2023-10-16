@@ -1,0 +1,140 @@
+$bg_color: #F4F4F4;
+$bg_color_2: #F2F2F2;
+
+$box_shadow: 4px 4px 10px rgb(0, 0, 0, 0.5);
+
+$txt_color: #000000;
+$txt_color_2: #757575;
+
+
+
+
+$ipad: 768px;
+$ipad_pro: 1024px; 
+$laptop13: 1280px;
+@mixin phone( $mediaMin: $ipad){
+    @media screen and (max-width: $mediaMin){
+        @content;
+    }
+}
+@mixin ipad_max( $mediaMax: $ipad_pro){
+    @media screen and (max-width: $mediaMax){
+        @content;
+    }
+}
+@mixin ipad( $mediaMin: $ipad){
+    @media screen and (min-width: $mediaMin){
+        @content;
+    }
+}
+@mixin ipad_pro_max( $mediaMax: $laptop13){
+    @media screen and (max-width: $mediaMax) {
+        @content;
+    }
+}
+@mixin ipad_pro( $mediaMin: $ipad_pro){
+    @media screen and (min-width: $mediaMin) {
+        @content;
+    }
+}
+@mixin laptop13( $mediaMin: $laptop13){
+    @media screen and (min-width: $mediaMin) {
+        @content;
+    }
+}
+
+
+@mixin borderTest($color){
+    border: solid 3px $color;
+}
+
+
+@mixin Dfx-Jc-Ac{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+@mixin Dfx-Jsb-Ac{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+@mixin Dfx-Jsa-Ac{
+    display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+@mixin Dfx-Jfe-Ac{
+    display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+@mixin Dfx-Jfs-Ac{
+    display: flex;
+        justify-content: flex-start;
+        align-items: center;
+}
+@mixin Dfx-Ac{
+    display: flex;
+        align-items: center;
+}
+
+// @mixin button($bcolor,
+//     $url,
+//     $x1,
+//     $y1,
+//     $bor,
+//     $col) {
+//     background: $bcolor;
+//     -webkit-mask: url($url);
+//     mask: url($url);
+//     -webkit-mask-size: $x1 $y1;
+//     mask-size: $x1 $y1;
+//     border: $bor;
+//     color: $col;
+// }
+
+// @mixin anime_a{
+//     @-webkit-keyframes ani {
+//         from {
+//         -webkit-mask-position: 0 0;
+//         mask-position: 0 0;
+//         }
+    
+//         to {
+//         -webkit-mask-position: 100% 0;
+//         mask-position: 100% 0;
+//         }
+//     }
+//     @keyframes ani {
+//         from {
+//         -webkit-mask-position: 0 0;
+//         mask-position: 0 0;
+//         }
+    
+//         to {
+//         -webkit-mask-position: 100% 0;
+//         mask-position: 100% 0;
+//         }
+//     }
+//     @-webkit-keyframes ani2 {
+//         from {
+//         -webkit-mask-position: 100% 0;
+//         mask-position: 100% 0;
+//         }
+//         to {
+//         -webkit-mask-position: 0 0;
+//         mask-position: 0 0;
+//         }
+//     }
+//     @keyframes ani2 {
+//         from {
+//         -webkit-mask-position: 100% 0;
+//         mask-position: 100% 0;
+//         }
+//         to {
+//         -webkit-mask-position: 0 0;
+//         mask-position: 0 0;
+//         }
+//     }
+// }

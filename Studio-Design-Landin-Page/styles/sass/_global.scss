@@ -1,0 +1,38 @@
+body{
+    background-color: $bg_color;
+    color: $txt_color;
+    font-family: 'Averta';
+    font-size: 16px;
+    overflow-x: hidden;
+}
+#page{
+    max-width: 1440px;
+    margin: 0 auto;
+    // overflow: hidden;
+}
+.container{
+    margin: 42px 120px 23px;
+    max-width: 100%;
+    @include ipad_max{
+        margin: 21px 60px 12px;
+    }
+    @include phone{
+        margin: 10px 20px 5px;
+    }
+}
+a{
+    text-transform: capitalize;
+}
+p{
+    color: $txt_color_2;
+    font-size: 16px;
+}
+.logo{
+    font-size: 27px;
+    span{
+        font-weight: 700
+    }
+    a:hover{
+        color: $txt_color_2;
+    }
+}

@@ -1,0 +1,92 @@
+
+.section_presentation{
+    .presentation:nth-child(1){
+        h1{
+            margin-bottom: 48px;
+            font-size: 2.5rem;
+            @include ipad_max{
+                font-size: 2rem;
+            }
+        }
+        p{
+            margin-bottom: 35px;
+            line-height: 25.6px;
+            font-size: 14px;
+        }
+        a{
+            padding: 20px 40px;
+            @include phone{
+                padding: 10px 20px;
+            }
+            border-radius: 60px;
+            background-color: #2639ED;
+            color: white;
+            &:hover{
+                background-color: #5e6eff
+            }
+        }
+    }
+    .presentation{
+        position: relative;
+    }
+    .img_presentation{
+        max-width: calc(100% + 60px);
+    }
+    @include ipad_max{
+        .img_presentation{
+            max-width: calc(100% + 60px);
+        }
+    }
+    @include phone{
+        .img_presentation{
+            max-width: 100%;
+        }
+    }
+    @include ipad{
+        @include Dfx-Jsb-Ac;
+        gap: 83px;
+        .presentation{
+            flex: 1;
+        }
+    }
+    @include ipad_max{
+        .presentation{
+            margin: 50px auto;
+            width: 90%;
+        }
+    }
+    .img_deco{
+        width: 8vw;
+        @include phone{
+            width: 16vw;
+        }
+        @include laptop13{
+            max-width: 150px;
+        }
+    }
+    .img_deco_1{
+        position: absolute;
+            top: 0;
+            left: -3vw;
+            z-index: -1;
+        @include phone{
+            left: -8vw;
+        }
+        @include laptop13{
+            left: -75px;
+        }
+    }
+    .img_deco_2{
+        position: absolute;
+            bottom: -6vw;
+            right: 0;
+            z-index: -1;
+        
+        @include phone{
+            bottom: -12vw;
+        }
+        @include laptop13{
+            bottom: -75px;
+        }
+    }
+}

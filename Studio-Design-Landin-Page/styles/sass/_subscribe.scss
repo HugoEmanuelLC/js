@@ -1,0 +1,65 @@
+.subscribe{
+    position: relative;
+    background-image: url('../../images/subscribe/Rectangle-30.png');
+    height: 292px;
+    padding-left: 70px;
+    @include Dfx-Jsb-Ac;
+    @include ipad_max{
+        flex-direction: column;
+    }
+    .deco_1{
+        position: absolute;
+            bottom: -38px;
+            left: -38px;
+            z-index: -2;
+    }
+
+
+    .text{
+        // @include borderTest(red);
+        width: 100%;
+        @include ipad_pro_max{
+            height: 100%;
+        }
+        @include ipad_max{
+            height: 50%;
+        }
+        h3{
+            font-size: 40px;
+            margin-bottom: 17px;
+        }
+    }
+
+
+
+    form{
+        // position: relative;
+        background-color: #2639ED;
+        height: 100%;
+        width: 80%;
+        border-radius: 130px 0 0 130px;
+        @include Dfx-Ac;
+    }
+    .item_form{
+        // @include borderTest(blue);
+        background-color: white;
+        margin-left: -100px;
+        border-radius: 60px;
+        padding: 0 10px;
+    }
+    input{
+        padding: 30px 34px;
+        border-radius: 60px;
+        border: none;
+    }
+    button{
+        padding: 20px 40px;
+        background-color: #2639ED;
+        color: white;
+        border-radius: 60px;
+        cursor: pointer;
+        &:hover{
+            background-color: #5967e0;
+        }
+    }
+}

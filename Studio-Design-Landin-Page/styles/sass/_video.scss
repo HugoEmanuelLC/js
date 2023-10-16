@@ -1,0 +1,49 @@
+.video{
+    margin: 400px 0;
+    // @include borderTest(red);
+    @include Dfx-Jc-Ac;
+    gap: 50px;
+    @include ipad_max{
+        flex-direction: column;
+    }
+    h3{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    p{
+        line-height: 25.6px
+    }
+    .items{
+        position: relative;
+        width: 50%;
+        height: auto;
+        @include ipad_max{
+            width: 80% !important;
+        }
+        @include phone{
+            width: 100% !important;
+        }
+    }
+    iframe{
+        min-height: 350px !important;
+        border-radius: 32px;
+        width: 100% !important;
+    }
+    img{
+        position: absolute;
+    }
+    .items:first-child img{
+        bottom: -50px;
+        right: -50px;
+        z-index: -1;
+    }
+    .items:last-child{
+        padding: 15px;
+    }
+    .items:last-child img{
+        top: -20px;
+        left: -20px;
+        z-index: -1;
+    }
+}
